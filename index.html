@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tic Tac Toe</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="gamePlay.js"></script>
+	</head>
+	<body>
+		<br><br><h1 style="color:white">Tic Tac Toe</h1>
+		<div class="container">
+			<div class="board">
+				<div id="cover">
+					<div id="b1" class="block" onclick="move(b1)"></div>
+					<div id="b2" class="block" onclick="move(b2)"></div>
+					<div id="b3" class="block" onclick="move(b3)"></div>
+					
+					<div id="b4" class="block" onclick="move(b4)"></div>
+					<div id="b5" class="block" onclick="move(b5)"></div>
+					<div id="b6" class="block" onclick="move(b6)"></div>
+					
+					<div id="b7" class="block" onclick="move(b7)"></div>
+					<div id="b8" class="block" onclick="move(b8)"></div>
+					<div id="b9" class="block" onclick="move(b9)"></div>
+				</div>
+			</div>
+			<div class="contents">
+				<div>
+					<select id="drop" class="difficulty">
+						<option value="1">Easy</option>
+						<option value="2">Difficult</option>
+					</select>
+				</div>
+				<button id="myButton" onclick="play()">Play</button><br><br>
+				<button onclick="reset()">Reset</button><br><br>
+				<p id="msg" class="message">Select The difficulty Level and Click on Play!</p>
+			</div>
+		</div>
+	</body>
+</html>
